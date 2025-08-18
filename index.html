@@ -2,53 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Curricular</title>
+  <title>Mi Malla Curricular 🎓</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f8f9;
+      color: #2c3e50;
       text-align: center;
+      margin: 0;
       padding: 20px;
     }
+
     h1 {
-      color: #333;
+      color: #1a5276;
+      margin-bottom: 30px;
     }
+
     .linea {
-      margin: 30px auto;
-      padding: 20px;
-      max-width: 600px;
-      border-radius: 12px;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 40px 0;
     }
+
+    h2 {
+      color: #117864;
+      margin-bottom: 20px;
+    }
+
     .curso {
       display: inline-block;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      margin: 8px;
+      font-size: 15px;
       color: white;
-      font-weight: bold;
-      min-width: 120px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    .pendiente { background: gray; }
-    .cursando { background: orange; }
-    .aprobado { background: green; }
+
+    .curso:hover {
+      transform: scale(1.05);
+    }
+
+    .pendiente { background: #7f8c8d; }   /* gris elegante */
+    .cursando  { background: #2980b9; }   /* azul oscuro */
+    .aprobado  { background: #27ae60; }   /* verde bonito */
   </style>
 </head>
 <body>
-  <h1>Mi Malla Curricular 🎓</h1>
+  <h1>🌟 Mi Malla Curricular 🌟</h1>
 
   <div class="linea">
-    <h2>📘 Línea: Matemáticas</h2>
-    <div class="curso aprobado">MAT101<br>Álgebra</div>
-    <div class="curso cursando">MAT102<br>Cálculo I</div>
-    <div class="curso pendiente">MAT103<br>Cálculo II</div>
+    <h2>📘 Primer Ciclo</h2>
+    <div class="curso pendiente">Código<br>Curso 1</div>
+    <div class="curso pendiente">Código<br>Curso 2</div>
+    <div class="curso pendiente">Código<br>Curso 3</div>
+    <div class="curso pendiente">Código<br>Curso 4</div>
   </div>
 
   <div class="linea">
-    <h2>💻 Línea: Programación</h2>
-    <div class="curso aprobado">INF101<br>Introducción</div>
-    <div class="curso pendiente">INF102<br>Programación Básica</div>
+    <h2>📘 Segundo Ciclo</h2>
+    <div class="curso pendiente">Código<br>Curso 1</div>
+    <div class="curso pendiente">Código<br>Curso 2</div>
+    <div class="curso pendiente">Código<br>Curso 3</div>
+    <div class="curso pendiente">Código<br>Curso 4</div>
   </div>
 
 </body>
