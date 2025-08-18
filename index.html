@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primera página en GitHub</title>
+  <title>Malla Curricular</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .linea {
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .curso {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      min-width: 120px;
+    }
+    .pendiente { background: gray; }
+    .cursando { background: orange; }
+    .aprobado { background: green; }
+  </style>
 </head>
 <body>
-  <h1>¡Hola mundo! 🎓</h1>
-  <p>Esta será mi malla curricular interactiva.</p>
+  <h1>Mi Malla Curricular 🎓</h1>
+
+  <div class="linea">
+    <h2>📘 Línea: Matemáticas</h2>
+    <div class="curso aprobado">MAT101<br>Álgebra</div>
+    <div class="curso cursando">MAT102<br>Cálculo I</div>
+    <div class="curso pendiente">MAT103<br>Cálculo II</div>
+  </div>
+
+  <div class="linea">
+    <h2>💻 Línea: Programación</h2>
+    <div class="curso aprobado">INF101<br>Introducción</div>
+    <div class="curso pendiente">INF102<br>Programación Básica</div>
+  </div>
+
 </body>
 </html>
