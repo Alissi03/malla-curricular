@@ -4,65 +4,60 @@ body {
   background-color: #C8E6C9;
   font-family: Arial, sans-serif;
   color: #6B8E74;
-  letter-spacing: 1px;
-  margin: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
 h1 {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size: 2.5em;
-  text-align: center;
-  color: #6B8E74;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
-h2 {
-  color: #90AFA0;
-  margin-top: 30px;
+.malla {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
 }
 
 .ciclo {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 80px;
 }
 
 .curso {
-  flex: 1;
+  width: 150px;
   padding: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
+  font-weight: bold;
   border: 2px solid #A3C9A8;
   background-color: #E3F2E1;
-  text-align: center;
-  font-weight: bold;
   transition: 0.3s;
-  color: #6B8E74;
 }
 
-.curso:hover {
-  background-color: #A3C9A8;
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
-.curso.cursando {
-  background-color: #8FD694; /* Verde brillante contraste */
+.curso.bloqueado {
+  background-color: #90AFA0;
   color: #fff;
 }
 
 .curso.aprobado {
-  background-color: #F0F8E2; /* Verde pastel limón */
-  border-color: #90AFA0; /* Verde gris elegante */
+  background-color: #8FD694;
+  color: #fff;
 }
 
-.curso.desaprobado {
-  background-color: #EF5350; /* Rojo suave */
-  color: white;
+.curso.pendiente {
+  background-color: #F0F8E2;
+  color: #6B8E74;
 }
 
-.creditos {
-  font-size: 0.9em;
-  color: #90AFA0; /* Verde gris elegante */
-  margin-top: 5px;
-  display: block;
+.lineas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
