@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+body {
+  background-color: #C8E6C9;
+  font-family: Arial, sans-serif;
+  color: #6B8E74;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #6B8E74;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #90AFA0;
+  margin-top: 30px;
+}
+
+.ciclo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.curso {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #A3C9A8;
+  background-color: #E3F2E1;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  color: #6B8E74;
+}
+
+.curso:hover {
+  background-color: #A3C9A8;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.curso.cursando {
+  background-color: #8FD694; /* Verde brillante contraste */
+  color: #fff;
+}
+
+.curso.aprobado {
+  background-color: #F0F8E2; /* Verde pastel limón */
+  border-color: #90AFA0; /* Verde gris elegante */
+}
+
+.curso.desaprobado {
+  background-color: #EF5350; /* Rojo suave */
+  color: white;
+}
+
+.creditos {
+  font-size: 0.9em;
+  color: #90AFA0; /* Verde gris elegante */
+  margin-top: 5px;
+  display: block;
+}
