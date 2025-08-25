@@ -16,27 +16,42 @@ h1 {
 
 .malla {
   display: flex;
-  flex-direction: column; /* ciclos uno debajo del otro */
-  gap: 60px;
+  flex-direction: column; /* ciclos en vertical */
+  gap: 50px;
 }
 
 .ciclo {
   display: flex;
-  flex-direction: row;   /* cursos al costado */
+  flex-direction: column;  /* título arriba, cursos abajo */
+  align-items: center;
+  gap: 15px;
+}
+
+.ciclo h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #6B8E74;
+}
+
+.fila-cursos {
+  display: flex;
+  flex-direction: row;   /* cursos en horizontal */
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .curso {
-  width: 180px;
-  padding: 12px;
-  border-radius: 10px;
+  width: 130px;  /* más pequeño para que entren 6 */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.85em; /* letra más pequeña */
   font-weight: bold;
   border: 2px solid #A3C9A8;
   background-color: #E3F2E1;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
 }
 
 .curso.bloqueado {
