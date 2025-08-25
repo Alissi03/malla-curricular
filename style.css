@@ -1,5 +1,5 @@
 body {
-  background-color: #C8E6C9;
+  background-color: #C8E6C9; /* verde pistacho */
   font-family: Arial, sans-serif;
   color: #6B8E74;
   text-align: center;
@@ -11,34 +11,37 @@ h1 {
   font-family: 'Shadows Into Light Two', cursive;
   font-size: 2em;
   margin-bottom: 30px;
+  letter-spacing: 1.5px;
 }
 
 .malla {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  position: relative;
 }
 
 .ciclo {
   display: flex;
-  justify-content: center;
-  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .curso {
-  width: 150px;
-  padding: 15px;
+  width: 300px;
+  padding: 12px;
   border-radius: 10px;
   font-weight: bold;
   border: 2px solid #A3C9A8;
   background-color: #E3F2E1;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .curso.bloqueado {
   background-color: #90AFA0;
   color: #fff;
+  cursor: not-allowed;
 }
 
 .curso.aprobado {
@@ -49,13 +52,4 @@ h1 {
 .curso.pendiente {
   background-color: #F0F8E2;
   color: #6B8E74;
-}
-
-.lineas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 }
