@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Malla Curricular Ejemplo</title>
+  <title>Malla Curricular - Prototipo</title>
 
   <!-- Fuente Google -->
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -11,18 +11,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla Curricular (Ejemplo)</h1>
+  <h1>Malla Curricular Interactiva (Prototipo)</h1>
 
   <div class="malla">
-    <!-- Ciclo 1 -->
+    <!-- Cadena 1 -->
     <div class="ciclo">
-      <h2>Ciclo 1</h2>
-      <div class="curso aprobado" id="mate1">Matemática Básica</div>
-      <div class="curso pendiente" id="quimica1">Química General</div>
+      <h2>Cadena 1</h2>
+      <div class="curso pendiente" id="topicos">Tópicos de ingeniería de sistemas e informática</div>
+      <div class="curso bloqueado" data-prerequisito="topicos" id="procNegocio">Ingeniería de procesos de negocio</div>
+      <div class="curso bloqueado" data-prerequisito="procNegocio" id="diseno">Diseño para ingeniería</div>
+      <div class="curso bloqueado" data-prerequisito="diseno" id="redes1">Redes de computadoras</div>
+      <div class="curso bloqueado" data-prerequisito="redes1" id="adminRedes">Administración de redes</div>
+      <div class="curso bloqueado" data-prerequisito="adminRedes" id="req">Ingeniería de requerimiento</div>
     </div>
 
-    <!-- Ciclo 2 -->
+    <!-- Cadena 2 -->
     <div class="ciclo">
-      <h2>Ciclo 2</h2>
-      <div class="curso bloqueado" data-prerequisito="mate1" id="algebra">Álgebra y Geometría</div>
-      <div class="curso bloqueado"
+      <h2>Cadena 2</h2>
+      <div class="curso pendiente" id="fisica1">Física general</div>
+      <div class="curso bloqueado" data-prerequisito="fisica1" id="fisica2">Física aplicada</div>
+      <div class="curso bloqueado" data-prerequisito="fisica2" id="digitales">Sistemas digitales</div>
+      <div class="curso bloqueado" data-prerequisito="digitales" id="arquitectura">Arquitectura de computadoras</div>
+      <div class="curso bloqueado" data-prerequisito="arquitectura" id="comunicacion">Comunicación de datos</div>
+      <div class="curso bloqueado" data-prerequisito="comunicacion" id="redes2">Redes de computadoras</div>
+      <div class="curso bloqueado" data-prerequisito="redes2" id="adminRedes2">Administración de redes</div>
+      <div class="curso bloqueado" data-prerequisito="adminRedes2" id="gobTI">Gobierno de TI</div>
+      <div class="curso bloqueado" data-prerequisito="gobTI" id="auditoria">Auditoría y seguridad informática</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
