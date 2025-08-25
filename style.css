@@ -42,10 +42,9 @@ h1 {
 }
 
 .curso {
-  width: 130px;  /* más pequeño para que entren 6 */
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 0.85em; /* letra más pequeña */
+  width: 160px;     /* más ancho */
+  padding: 14px;    /* más espacio interno */
+  font-size: 0.95em; /* letra más clara */
   font-weight: bold;
   border: 2px solid #A3C9A8;
   background-color: #E3F2E1;
