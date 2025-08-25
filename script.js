@@ -1,4 +1,4 @@
-// Función para desbloquear cursos cuyo prerequisito está aprobado
+// Desbloquear cursos cuando su prerequisito está aprobado
 function actualizarCursos() {
   document.querySelectorAll('.curso.bloqueado').forEach(curso => {
     const requisito = curso.dataset.prerequisito;
@@ -11,7 +11,7 @@ function actualizarCursos() {
   });
 }
 
-// Click en un curso
+// Al hacer click en un curso
 document.querySelectorAll('.curso').forEach(curso => {
   curso.addEventListener('click', () => {
     if (curso.classList.contains('pendiente')) {
@@ -22,5 +22,5 @@ document.querySelectorAll('.curso').forEach(curso => {
   });
 });
 
-// Inicializar
+// Inicializar desbloqueo
 actualizarCursos();
