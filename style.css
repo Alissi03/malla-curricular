@@ -16,19 +16,20 @@ h1 {
 
 .malla {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* ciclos uno debajo del otro */
   gap: 60px;
 }
 
 .ciclo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  flex-direction: row;   /* cursos al costado */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .curso {
-  width: 300px;
+  width: 180px;
   padding: 12px;
   border-radius: 10px;
   font-weight: bold;
