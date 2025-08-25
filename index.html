@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Malla Curricular - Prototipo</title>
+  <title>Malla Curricular - Ciclos</title>
 
   <!-- Fuente Google -->
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -11,32 +11,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla Curricular Interactiva (Prototipo)</h1>
+  <h1>Malla Curricular Interactiva</h1>
 
   <div class="malla">
-    <!-- Cadena 1 -->
+    <!-- Ciclo 1 -->
     <div class="ciclo">
-      <h2>Cadena 1</h2>
+      <h2>Ciclo 1 (21 créditos)</h2>
       <div class="curso pendiente" id="topicos">Tópicos de ingeniería de sistemas e informática</div>
-      <div class="curso bloqueado" data-prerequisito="topicos" id="procNegocio">Ingeniería de procesos de negocio</div>
-      <div class="curso bloqueado" data-prerequisito="procNegocio" id="diseno">Diseño para ingeniería</div>
-      <div class="curso bloqueado" data-prerequisito="diseno" id="redes1">Redes de computadoras</div>
-      <div class="curso bloqueado" data-prerequisito="redes1" id="adminRedes">Administración de redes</div>
-      <div class="curso bloqueado" data-prerequisito="adminRedes" id="req">Ingeniería de requerimiento</div>
+      <div class="curso pendiente" id="ecologia">Ecología</div>
+      <div class="curso pendiente" id="psicoIng">Psicología de la ingeniería</div>
+      <div class="curso pendiente" id="lenguaje">Lenguaje y comunicación</div>
+      <div class="curso pendiente" id="fisica1">Física general</div>
+      <div class="curso pendiente" id="algebra">Álgebra lineal</div>
     </div>
 
-    <!-- Cadena 2 -->
+    <!-- Ciclo 2 -->
     <div class="ciclo">
-      <h2>Cadena 2</h2>
-      <div class="curso pendiente" id="fisica1">Física general</div>
+      <h2>Ciclo 2 (21 créditos)</h2>
+      <div class="curso bloqueado" data-prerequisito="topicos" id="procNegocio">Ingeniería de procesos de negocio</div>
       <div class="curso bloqueado" data-prerequisito="fisica1" id="fisica2">Física aplicada</div>
-      <div class="curso bloqueado" data-prerequisito="fisica2" id="digitales">Sistemas digitales</div>
-      <div class="curso bloqueado" data-prerequisito="digitales" id="arquitectura">Arquitectura de computadoras</div>
-      <div class="curso bloqueado" data-prerequisito="arquitectura" id="comunicacion">Comunicación de datos</div>
-      <div class="curso bloqueado" data-prerequisito="comunicacion" id="redes2">Redes de computadoras</div>
-      <div class="curso bloqueado" data-prerequisito="redes2" id="adminRedes2">Administración de redes</div>
-      <div class="curso bloqueado" data-prerequisito="adminRedes2" id="gobTI">Gobierno de TI</div>
-      <div class="curso bloqueado" data-prerequisito="gobTI" id="auditoria">Auditoría y seguridad informática</div>
+      <div class="curso bloqueado" data-prerequisito="algebra" id="discreta">Matemática discreta</div>
+      <div class="curso bloqueado" data-prerequisito="discreta" id="algoritmos">Algoritmos</div>
+      <div class="curso pendiente" id="filosofia">Filosofía y ética</div>
+      <div class="curso pendiente" id="conta">Contabilidad aplicada</div>
     </div>
   </div>
 
